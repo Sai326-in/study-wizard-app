@@ -47,6 +47,12 @@ export default {
           DEFAULT: "hsl(var(--card))",
           foreground: "hsl(var(--card-foreground))",
         },
+        health: {
+          excellent: "hsl(var(--health-excellent))",
+          good: "hsl(var(--health-good))",
+          warning: "hsl(var(--health-warning))",
+          danger: "hsl(var(--health-danger))",
+        },
         sidebar: {
           DEFAULT: "hsl(var(--sidebar-background))",
           foreground: "hsl(var(--sidebar-foreground))",
@@ -84,6 +90,21 @@ export default {
       animation: {
         "accordion-down": "accordion-down 0.2s ease-out",
         "accordion-up": "accordion-up 0.2s ease-out",
+        "pulse-soft": "pulse 3s cubic-bezier(0.4, 0, 0.6, 1) infinite",
+        "bounce-gentle": "bounce 2s infinite",
+      },
+      backgroundImage: {
+        "gradient-health": "var(--gradient-health)",
+        "gradient-wellness": "var(--gradient-wellness)",
+        "gradient-mood": "var(--gradient-mood)",
+      },
+      boxShadow: {
+        "soft": "var(--shadow-soft)",
+        "health": "var(--shadow-health)",
+      },
+      transitionTimingFunction: {
+        "smooth": "cubic-bezier(0.4, 0, 0.2, 1)",
+        "bounce": "cubic-bezier(0.68, -0.55, 0.265, 1.55)",
       },
     },
   },
